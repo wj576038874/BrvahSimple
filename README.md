@@ -3,7 +3,7 @@ http://www.recyclerview.org/
 Powerful and flexible RecyclerAdapter,
 Please feel free to use this. (Welcome to **Star** and **Fork**)
 
-### 将brvah源码down下来修改部分源码，具体更改部分如下：
+### 将brvah源码down下来修改部分源码，基于2.9.45-androidx版本修改，具体更改部分如下：
 #### 1、新增onViewHolderCreated方法回调 子adapter类可以重新此方法，再viewholder创建的时候做一些初始化的操作，例如itemView的点击事件，应该放在onCreateViewHolder中，设置一次即可，放在bindViewHolder中，由于bindViewHolder滑动时item可见时就会执行，导致会频繁生成太多OnClickListener对象
 #### 2、新增BaseItemProvider的onViewHolderCreated 子ItemProvider可以重新此方法，再viewholder创建的时候做一些初始化的操作，同上
 #### 3、新增BaseItemProvider的子view的点击事件onChildClick，子view长按事件onChildLongClick
